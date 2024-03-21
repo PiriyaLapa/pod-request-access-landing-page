@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StyledLandingPage } from "../styles/styles";
-import { NumberFormatter } from "../helpers/detectScreenSize";
-import Card from "../components/cards/Card";
+// import { NumberFormatter } from "../helpers/detectScreenSize";
+// import Card from "../components/cards/Card";
 import Header from "./sections/Header";
 
 export default class LandingPage extends React.Component {
