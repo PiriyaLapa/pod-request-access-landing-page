@@ -1,6 +1,8 @@
 import * as React from "react";
 import { StyledLandingPage } from "../styles/styles";
 import { NumberFormatter } from "../helpers/detectScreenSize";
+import Card from "../components/cards/Card";
+import Header from "./sections/Header";
 
 export default class LandingPage extends React.Component {
   // Define initial state to hold window dimensions
@@ -27,13 +29,9 @@ export default class LandingPage extends React.Component {
     window.removeEventListener("resize", this.updateWindowDimensions);
   }
   public render(): React.ReactNode {
-    const {windowWidth} = this.state;
-    const formatter = new NumberFormatter();
-    const formatterWidth = formatter.formatNumber(windowWidth);
 
     return <StyledLandingPage>
-        <h1>LandingPage</h1>
-        <h2>{formatterWidth} pixel</h2>
+      <Header />
     </StyledLandingPage>;
   }
 }

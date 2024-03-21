@@ -4,3 +4,21 @@ export interface ScreenSizeDetectProps {
   windowWidth: number;
   windowHeight: number;
 }
+
+export interface PrimaryBtnProps {
+  btnMessage: string;
+}
+export interface DATACARD {
+  title: string;
+  content: string;
+  textFieldContent: string;
+  btnContent: string;
+}
+
+export interface CardProps{
+  title: string;
+  content: string;
+  textFieldContent: string;
+  btnContent: string;
+
+}

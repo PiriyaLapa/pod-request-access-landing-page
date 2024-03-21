@@ -16,11 +16,24 @@ export const StyledScreenSizeDetect = styled.div`
     text-transform: capitailze;
     font-size: 1em;
     span {
-      color: green;
+      color: #54e6af;
     }
   }
 `;
-
+// Styled Page
 export const StyledLandingPage = styled.div`
-
+  //
 `;
+
+// Style Button
+export const StyledPrimaryBtn = styled.button`
+  //
+`;
+
+export const StyledCard = styled.div``;
+export const StyledTitleCard = styled.span``;
+export const StyledContentCard = styled.span``;
+export const StyledForm = styled.form``;
+export const StyledInput = styled.input``;
+export const StyledLogo = styled.div``;
+export const StyledHeader = styled.div``;
