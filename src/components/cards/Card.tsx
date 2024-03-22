@@ -13,6 +13,7 @@ import IconApple from "../Icons/IconApple";
 import IconGoogle from "../Icons/IconGoogle";
 import IconPocket from "../Icons/IconPocket";
 import IconSpotify from "../Icons/IconSpotify";
+import BgPatternDots from "../vectors/BgPatternDots";
 
 export default class Card extends Component {
   render(): ReactNode {
@@ -31,6 +32,7 @@ export default class Card extends Component {
           <IconGoogle />
           <IconPocket />
         </StyledContainerIcon>
+        <BgPatternDots />
       </StyledCard>
     );
   }

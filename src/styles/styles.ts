@@ -46,3 +46,5 @@ export const StyledIconPocket = styled.div``;
 export const StyledIconSpotify = styled.div``;
 // Styled seaction
 export const StyledHeader = styled.div``;
+export const StyledBgPatternDots = styled.div``;
+export const StyledPrimaryImg = styled.img``;
