@@ -33,12 +33,16 @@ export const StyledTitleCard = styled.span``;
 export const StyledContentCard = styled.span``;
 export const StyledForm = styled.form``;
 export const StyledInput = styled.input``;
+export const StyledContainerIcon = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+`;
 // Styled Icon
 export const StyledLogo = styled.div``;
-export const StyledIconApple= styled.div``;
-export const StyledIconGoolge= styled.div``;
-export const StyledIconPocket= styled.div``;
-export const StyledIconSpotify= styled.div``;
+export const StyledIconApple = styled.div``;
+export const StyledIconGoolge = styled.div``;
+export const StyledIconPocket = styled.div``;
+export const StyledIconSpotify = styled.div``;
 // Styled seaction
 export const StyledHeader = styled.div``;
-
