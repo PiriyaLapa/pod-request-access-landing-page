@@ -6,14 +6,14 @@ import {
   StyledTitleCard,
   StyledForm,
   StyledInput,
-  StyledContainerIcon,
+  // StyledContainerIcon,
   WhiteWord,
 } from "../../styles/styles";
 import PrimaryBtn from "../buttons/PrimaryBtn";
-import IconApple from "../Icons/IconApple";
-import IconGoogle from "../Icons/IconGoogle";
-import IconPocket from "../Icons/IconPocket";
-import IconSpotify from "../Icons/IconSpotify";
+// import IconApple from "../Icons/IconApple";
+// import IconGoogle from "../Icons/IconGoogle";
+// import IconPocket from "../Icons/IconPocket";
+// import IconSpotify from "../Icons/IconSpotify";
 // import BgPatternDots from "../vectors/BgPatternDots";
 
 export default class Card extends Component {
@@ -32,17 +32,17 @@ export default class Card extends Component {
             ))
           }
         </StyledTitleCard>
-        <StyledContentCard>{content}</StyledContentCard>
+         <StyledContentCard>{content}</StyledContentCard>
         <StyledForm>
           <StyledInput type="text" placeholder={textFieldContent} />
           <PrimaryBtn btnMessage={btnContent} />
         </StyledForm>
-        <StyledContainerIcon>
+        {/* <StyledContainerIcon>
           <IconSpotify />
           <IconApple />
           <IconGoogle />
           <IconPocket />
-        </StyledContainerIcon>
+        </StyledContainerIcon>  */}
         {/* <BgPatternDots /> */}
       </StyledCard>
     );

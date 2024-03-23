@@ -33,12 +33,43 @@ export const StyledPrimaryBtn = styled.button`
   width: 162px;
   height: 46px;
   border-radius: 28px;
-  position: relative;
-  right: 167px;
+  font-family:'Chivo'; 
+  font-weight:700;
+  font-size:14px;
+  line-height:28px;
+  font-style:normal;
+  /* position: relative;
+  right: 167px; */
   &:hover {
     transition: 0.6s;
     background-color: #b3ffe2;
   }
+
+  @media screen and (max-width: 767px) {
+    width:327px;
+    height:46px;
+    align-items:center;
+    letter-spacing:0.5px;
+  }
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* background-color:#BDCDD6; */
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* background-color:#93BFCF; */
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
+
 `;
 // Style Card
 export const StyledCard = styled.div`
@@ -133,7 +164,34 @@ export const StyledContentCard = styled.span`
     /* background-color:#CADEFC; */
   }
 `;
-export const StyledForm = styled.form``;
+export const StyledForm = styled.form`
+  @media screen and (max-width: 767px) {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* background-color:#BDCDD6; */
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* background-color:#93BFCF; */
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
+  
+`;
 export const StyledInput = styled.input`
   background-color: #2c344b;
   border-radius: 28px;
@@ -146,6 +204,31 @@ export const StyledInput = styled.input`
     color: #c2cbe5;
     text-align: left;
   }
+
+  @media screen and (max-width: 767px) {
+    width:327px;
+    height:46px;
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* background-color:#BDCDD6; */
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* background-color:#93BFCF; */
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
+
 `;
 export const StyledContainerIcon = styled.div`
   display: grid;
@@ -154,7 +237,10 @@ export const StyledContainerIcon = styled.div`
 `;
 // Styled Icon
 export const StyledLogo = styled.div`
+
   @media screen and (max-width: 767px) {
+    padding-top: 10%;
+    display:inline-block;
     text-align: center;
   }
 
