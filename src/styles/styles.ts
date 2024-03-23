@@ -26,7 +26,21 @@ export const StyledLandingPage = styled.div`
 `;
 
 // Style Button
-export const StyledPrimaryBtn = styled.button``;
+export const StyledPrimaryBtn = styled.button`
+  border:none;
+  background-color:#54E6AF;
+  color:#121725;
+  width:162px;
+  height:46px;
+  border-radius:28px;
+  position:relative;
+  right:167px;
+  &:hover{
+    transition:0.6s;
+    background-color:#B3FFE2;
+    
+  }
+`;
 // Style Card
 export const StyledCard = styled.div``;
 export const StyledTitleCard = styled.span``;
@@ -39,9 +53,10 @@ export const StyledInput = styled.input`
   height: 56px;
   border: none;
   color: #ffff;
+  padding-left:6vw;
   &::placeholder {
-    color: red;
-    text-align: start;
+    color: #C2CBE5;
+    text-align:left;
   }
 `;
 export const StyledContainerIcon = styled.div`
