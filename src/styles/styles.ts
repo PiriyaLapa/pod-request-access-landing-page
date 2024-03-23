@@ -267,8 +267,10 @@ export const StyledIconSpotify = styled.div``;
 // Styled seaction
 export const StyledHeader = styled.section<StyledHeaderProps>`
   display: grid;
-  grid-gap: 10vh;
+  /* grid-gap: 10vh; */
   @media screen and (max-width: 767px) {
+  grid-gap: 10vh;
+    height:100vh;
     background-image: linear-gradient(
         rgba(18, 23, 37, 0.85),
         rgba(18, 23, 37, 0.85)
