@@ -76,6 +76,7 @@ export const StyledCard = styled.div`
   @media screen and (max-width: 767px) {
     display:grid;
     grid-gap:3vh;
+    padding:0% 3%;
   }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -170,6 +171,7 @@ export const StyledForm = styled.form`
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    gap:2vh;
   }
 
   // Tablet
