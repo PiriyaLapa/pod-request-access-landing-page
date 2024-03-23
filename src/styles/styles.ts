@@ -43,7 +43,9 @@ export const StyledPrimaryBtn = styled.button`
 `;
 // Style Card
 export const StyledCard = styled.div``;
-export const StyledTitleCard = styled.span``;
+export const StyledTitleCard = styled.span`
+  color:#54E6AF;
+`;
 export const StyledContentCard = styled.span``;
 export const StyledForm = styled.form``;
 export const StyledInput = styled.input`
@@ -74,3 +76,7 @@ export const StyledIconSpotify = styled.div``;
 export const StyledHeader = styled.div``;
 export const StyledBgPatternDots = styled.div``;
 export const StyledPrimaryImg = styled.img``;
+
+export const WhiteWord = styled.span`
+  color:#ffff;
+`;
