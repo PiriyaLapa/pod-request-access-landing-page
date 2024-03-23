@@ -30,7 +30,7 @@ export default class LandingPage extends React.Component {
   }
 
   public render(): React.ReactNode {
-    const { windowWidth, windowHeight } = this.state;
+    // const { windowWidth, windowHeight } = this.state;
     // const labelScreenNow = new ScreenSizeDetect(windowWidth);
 
     return (

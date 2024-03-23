@@ -19,20 +19,18 @@ import PrimaryBtn from "../buttons/PrimaryBtn";
 export default class Card extends Component {
   render(): ReactNode {
     const { title, content, textFieldContent, btnContent } = dataCard;
-    const parts = title.split('everywhere.');
+    const parts = title.split("everywhere.");
     return (
       <StyledCard>
         <StyledTitleCard>
-          {
-            parts.map((part,index) => (
-              <React.Fragment key={index}>
-                {part}
-                {index < parts.length -1 && <WhiteWord>everywhere.</WhiteWord>}
-              </React.Fragment>
-            ))
-          }
+          {parts.map((part, index) => (
+            <React.Fragment key={index}>
+              {part}
+              {index < parts.length - 1 && <WhiteWord>everywhere.</WhiteWord>}
+            </React.Fragment>
+          ))}
         </StyledTitleCard>
-         <StyledContentCard>{content}</StyledContentCard>
+        <StyledContentCard>{content}</StyledContentCard>
         <StyledForm>
           <StyledInput type="text" placeholder={textFieldContent} />
           <PrimaryBtn btnMessage={btnContent} />
