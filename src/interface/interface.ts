@@ -15,12 +15,15 @@ export interface DATACARD {
   btnContent: string;
 }
 
-export interface CardProps{
+export interface CardProps {
   title: string;
   content: string;
   textFieldContent: string;
   btnContent: string;
 }
-export interface PrimaryImgProps{
-    urlImg : string;
+export interface PrimaryImgProps {
+  urlImg: string;
+}
+export interface StyledHeaderProps {
+  $bgImg: string;
 }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { StyledHeaderProps } from "../interface/interface";
 export const StyledScreenSizeDetect = styled.div`
   width: 90%;
   height: auto;
@@ -33,11 +34,11 @@ export const StyledPrimaryBtn = styled.button`
   width: 162px;
   height: 46px;
   border-radius: 28px;
-  font-family:'Chivo'; 
-  font-weight:700;
-  font-size:14px;
-  line-height:28px;
-  font-style:normal;
+  font-family: "Chivo";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  font-style: normal;
   /* position: relative;
   right: 167px; */
   &:hover {
@@ -46,10 +47,10 @@ export const StyledPrimaryBtn = styled.button`
   }
 
   @media screen and (max-width: 767px) {
-    width:327px;
-    height:46px;
-    align-items:center;
-    letter-spacing:0.5px;
+    width: 327px;
+    height: 46px;
+    align-items: center;
+    letter-spacing: 0.5px;
   }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -69,14 +70,13 @@ export const StyledPrimaryBtn = styled.button`
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
   }
-
 `;
 // Style Card
 export const StyledCard = styled.div`
   @media screen and (max-width: 767px) {
-    display:grid;
-    grid-gap:3vh;
-    padding:0% 3%;
+    display: grid;
+    grid-gap: 3vh;
+    padding: 0% 3%;
   }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -96,7 +96,6 @@ export const StyledCard = styled.div`
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
   }
-  
 `;
 export const StyledTitleCard = styled.span`
   color: #54e6af;
@@ -136,14 +135,13 @@ export const StyledContentCard = styled.span`
   font-style: normal;
   font-weight: 300;
   color: #c2cbe5;
-  
 
   @media screen and (max-width: 767px) {
-    display:inline-block;
-    text-align:center;
+    display: inline-block;
+    text-align: center;
     font-size: 15px;
     line-height: 25px;
-    align-items:center;
+    align-items: center;
   }
 
   // Tablet
@@ -167,11 +165,11 @@ export const StyledContentCard = styled.span`
 `;
 export const StyledForm = styled.form`
   @media screen and (max-width: 767px) {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    gap:2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
   }
 
   // Tablet
@@ -192,7 +190,6 @@ export const StyledForm = styled.form`
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
   }
-  
 `;
 export const StyledInput = styled.input`
   background-color: #2c344b;
@@ -208,8 +205,8 @@ export const StyledInput = styled.input`
   }
 
   @media screen and (max-width: 767px) {
-    width:327px;
-    height:46px;
+    width: 327px;
+    height: 46px;
   }
 
   // Tablet
@@ -230,7 +227,6 @@ export const StyledInput = styled.input`
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
   }
-
 `;
 export const StyledContainerIcon = styled.div`
   display: grid;
@@ -239,10 +235,9 @@ export const StyledContainerIcon = styled.div`
 `;
 // Styled Icon
 export const StyledLogo = styled.div`
-
   @media screen and (max-width: 767px) {
     padding-top: 10%;
-    display:inline-block;
+    display: inline-block;
     text-align: center;
   }
 
@@ -270,10 +265,17 @@ export const StyledIconGoolge = styled.div``;
 export const StyledIconPocket = styled.div``;
 export const StyledIconSpotify = styled.div``;
 // Styled seaction
-export const StyledHeader = styled.section`
+export const StyledHeader = styled.section<StyledHeaderProps>`
   display: grid;
   grid-gap: 10vh;
   @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        rgba(18, 23, 37, 0.85),
+        rgba(18, 23, 37, 0.85)
+      ),
+      url(${(props) => props.$bgImg});
+    object-fit: cover;
+    background-repeat: no-repeat;
   }
 
   // Tablet

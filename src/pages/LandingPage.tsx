@@ -1,6 +1,7 @@
 import * as React from "react";
 import { StyledLandingPage } from "../styles/styles";
 import Header from "./sections/Header";
+import mobileBg from '../assets/mobile/image-host.jpg';
 // import ScreenSizeDetectComponent from "../components/screensizedetect/ScreenSizeDetect";
 // import { ScreenSizeDetect } from "../helpers/detectScreenSize";
 
@@ -35,7 +36,7 @@ export default class LandingPage extends React.Component {
 
     return (
       <StyledLandingPage>
-        <Header />
+        <Header bgImg={mobileBg} />
         {/* <ScreenSizeDetectComponent
           screenNow={labelScreenNow.detectScreenSize()}
           windowWidth={windowWidth}
