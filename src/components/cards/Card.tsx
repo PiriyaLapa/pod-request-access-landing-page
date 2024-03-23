@@ -14,12 +14,12 @@ import IconApple from "../Icons/IconApple";
 import IconGoogle from "../Icons/IconGoogle";
 import IconPocket from "../Icons/IconPocket";
 import IconSpotify from "../Icons/IconSpotify";
-import BgPatternDots from "../vectors/BgPatternDots";
+// import BgPatternDots from "../vectors/BgPatternDots";
 
 export default class Card extends Component {
   render(): ReactNode {
     const { title, content, textFieldContent, btnContent } = dataCard;
-    const parts = title.split('everywhere');
+    const parts = title.split('everywhere.');
     return (
       <StyledCard>
         <StyledTitleCard>
@@ -27,7 +27,7 @@ export default class Card extends Component {
             parts.map((part,index) => (
               <React.Fragment key={index}>
                 {part}
-                {index < parts.length -1 && <WhiteWord>everywhere</WhiteWord>}
+                {index < parts.length -1 && <WhiteWord>everywhere.</WhiteWord>}
               </React.Fragment>
             ))
           }
@@ -43,7 +43,7 @@ export default class Card extends Component {
           <IconGoogle />
           <IconPocket />
         </StyledContainerIcon>
-        <BgPatternDots />
+        {/* <BgPatternDots /> */}
       </StyledCard>
     );
   }

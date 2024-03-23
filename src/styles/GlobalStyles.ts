@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle<{}>`
         margin:0;
         padding:0;
         box-sizing: border-box;
-        font-family:"Chivo", sans-serif;
+        font-family:"Chivo";
     }
 
     body {
@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle<{}>`
         height:100vh;
         background-color:#121725;
         color:#ffff;
+        overflow:hidden;
         @media screen and (max-width:767px){
              /* background-color:#EEE9DA; */
         }

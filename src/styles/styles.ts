@@ -27,28 +27,112 @@ export const StyledLandingPage = styled.div`
 
 // Style Button
 export const StyledPrimaryBtn = styled.button`
-  border:none;
-  background-color:#54E6AF;
-  color:#121725;
-  width:162px;
-  height:46px;
-  border-radius:28px;
-  position:relative;
-  right:167px;
-  &:hover{
-    transition:0.6s;
-    background-color:#B3FFE2;
-    
+  border: none;
+  background-color: #54e6af;
+  color: #121725;
+  width: 162px;
+  height: 46px;
+  border-radius: 28px;
+  position: relative;
+  right: 167px;
+  &:hover {
+    transition: 0.6s;
+    background-color: #b3ffe2;
   }
 `;
 // Style Card
-export const StyledCard = styled.div``;
-export const StyledTitleCard = styled.span`
-  color:#54E6AF;
-  display:block;
-text-transform:uppercase;
+export const StyledCard = styled.div`
+  @media screen and (max-width: 767px) {
+    display:grid;
+    grid-gap:3vh;
+  }
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* background-color:#BDCDD6; */
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* background-color:#93BFCF; */
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
+  
 `;
-export const StyledContentCard = styled.span``;
+export const StyledTitleCard = styled.span`
+  color: #54e6af;
+  display: block;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    font-family: "chivo";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* background-color:#BDCDD6; */
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* background-color:#93BFCF; */
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
+`;
+export const StyledContentCard = styled.span`
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 300;
+  color: #c2cbe5;
+  
+
+  @media screen and (max-width: 767px) {
+    display:inline-block;
+    text-align:center;
+    font-size: 15px;
+    line-height: 25px;
+    align-items:center;
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* background-color:#BDCDD6; */
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* background-color:#93BFCF; */
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
+`;
 export const StyledForm = styled.form``;
 export const StyledInput = styled.input`
   background-color: #2c344b;
@@ -57,10 +141,10 @@ export const StyledInput = styled.input`
   height: 56px;
   border: none;
   color: #ffff;
-  padding-left:6vw;
+  padding-left: 6vw;
   &::placeholder {
-    color: #C2CBE5;
-    text-align:left;
+    color: #c2cbe5;
+    text-align: left;
   }
 `;
 export const StyledContainerIcon = styled.div`
@@ -69,16 +153,60 @@ export const StyledContainerIcon = styled.div`
   align-items: center;
 `;
 // Styled Icon
-export const StyledLogo = styled.div``;
+export const StyledLogo = styled.div`
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* background-color:#BDCDD6; */
+    /* padding: 3% 5%; */
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* background-color:#93BFCF; */
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
+`;
 export const StyledIconApple = styled.div``;
 export const StyledIconGoolge = styled.div``;
 export const StyledIconPocket = styled.div``;
 export const StyledIconSpotify = styled.div``;
 // Styled seaction
-export const StyledHeader = styled.div``;
+export const StyledHeader = styled.section`
+  display: grid;
+  grid-gap: 10vh;
+  @media screen and (max-width: 767px) {
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
+`;
 export const StyledBgPatternDots = styled.div``;
 export const StyledPrimaryImg = styled.img``;
 
 export const WhiteWord = styled.span`
-  color:#ffff;
+  color: #ffff;
 `;
