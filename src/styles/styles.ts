@@ -32,7 +32,18 @@ export const StyledCard = styled.div``;
 export const StyledTitleCard = styled.span``;
 export const StyledContentCard = styled.span``;
 export const StyledForm = styled.form``;
-export const StyledInput = styled.input``;
+export const StyledInput = styled.input`
+  background-color: #2c344b;
+  border-radius: 28px;
+  width: 427px;
+  height: 56px;
+  border: none;
+  color: #ffff;
+  &::placeholder {
+    color: red;
+    text-align: start;
+  }
+`;
 export const StyledContainerIcon = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);

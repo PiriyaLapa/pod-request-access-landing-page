@@ -20,5 +20,7 @@ export interface CardProps{
   content: string;
   textFieldContent: string;
   btnContent: string;
-
+}
+export interface PrimaryImgProps{
+    urlImg : string;
 }
