@@ -45,6 +45,8 @@ export const StyledPrimaryBtn = styled.button`
 export const StyledCard = styled.div``;
 export const StyledTitleCard = styled.span`
   color:#54E6AF;
+  display:block;
+text-transform:uppercase;
 `;
 export const StyledContentCard = styled.span``;
 export const StyledForm = styled.form``;
