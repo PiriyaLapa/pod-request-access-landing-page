@@ -263,13 +263,32 @@ export const StyledLogo = styled.div`
 export const StyledIconApple = styled.div``;
 export const StyledIconGoolge = styled.div``;
 export const StyledIconPocket = styled.div``;
-export const StyledIconSpotify = styled.div``;
+export const StyledIconSpotify = styled.div`
+  @media screen and (max-width: 767px) {
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
+
+`;
 // Styled seaction
 export const StyledHeader = styled.section<StyledHeaderProps>`
   display: grid;
-  /* grid-gap: 10vh; */
-  @media screen and (max-width: 767px) {
   grid-gap: 10vh;
+  @media screen and (max-width: 767px) {
     height:100vh;
     background-image: linear-gradient(
         rgba(18, 23, 37, 0.85),
