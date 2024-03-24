@@ -235,8 +235,8 @@ export const StyledContainerIcon = styled.div`
 `;
 export const StyledContainerIconMobile = styled.div`
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: auto auto auto auto; */
   align-items: center;
 `;
 // Styled Icon
