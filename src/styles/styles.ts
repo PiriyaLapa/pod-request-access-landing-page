@@ -236,8 +236,8 @@ export const StyledContainerIcon = styled.div`
 export const StyledContainerIconMobile = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-columns: auto auto auto auto; */
   align-items: center;
+  text-align: center;
 `;
 // Styled Icon
 export const StyledLogo = styled.div`
@@ -288,14 +288,13 @@ export const StyledIconSpotify = styled.div`
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
   }
-
 `;
 // Styled seaction
 export const StyledHeader = styled.section<StyledHeaderProps>`
   display: grid;
   grid-gap: 10vh;
   @media screen and (max-width: 767px) {
-    height:100vh;
+    height: 100vh;
     background-image: linear-gradient(
         rgba(18, 23, 37, 0.85),
         rgba(18, 23, 37, 0.85)
