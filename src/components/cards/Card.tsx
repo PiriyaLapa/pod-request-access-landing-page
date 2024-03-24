@@ -6,15 +6,15 @@ import {
   StyledTitleCard,
   StyledForm,
   StyledInput,
-  StyledContainerIcon,
+  // StyledContainerIcon,
   WhiteWord,
   StyledContainerIconMobile,
 } from "../../styles/styles";
 import PrimaryBtn from "../buttons/PrimaryBtn";
-import IconApple from "../Icons/IconApple";
-import IconGoogle from "../Icons/IconGoogle";
-import IconPocket from "../Icons/IconPocket";
-import IconSpotify from "../Icons/IconSpotify";
+// import IconApple from "../Icons/IconApple";
+// import IconGoogle from "../Icons/IconGoogle";
+// import IconPocket from "../Icons/IconPocket";
+// import IconSpotify from "../Icons/IconSpotify";
 import IconSpotifyMobile from "../Icons/IconSpotifyMobile";
 import IconAppleMobile from "../Icons/IconAppleMobile";
 import IconGoogleMobile from "../Icons/IconGoogleMobile";
@@ -36,12 +36,12 @@ export default class Card extends Component {
           ))}
         </StyledTitleCard>
         <StyledContentCard>{content}</StyledContentCard>
-          <StyledContainerIconMobile>
-            <IconSpotifyMobile />
-            <IconAppleMobile />
-            <IconGoogleMobile />
-            <IconPocketMobile />
-          </StyledContainerIconMobile>
+        <StyledContainerIconMobile>
+          <IconSpotifyMobile />
+          <IconAppleMobile />
+          <IconGoogleMobile />
+          <IconPocketMobile />
+        </StyledContainerIconMobile>
         <StyledForm>
           <StyledInput type="text" placeholder={textFieldContent} />
           <PrimaryBtn btnMessage={btnContent} />
