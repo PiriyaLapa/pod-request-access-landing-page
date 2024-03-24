@@ -242,9 +242,10 @@ export const StyledContainerIconMobile = styled.div`
 // Styled Icon
 export const StyledLogo = styled.div`
   @media screen and (max-width: 767px) {
-    padding-top: 10%;
-    display: inline-block;
+    padding-top: 20%;
+    display:block;
     text-align: center;
+    
   }
 
   // Tablet
@@ -292,7 +293,7 @@ export const StyledIconSpotify = styled.div`
 // Styled seaction
 export const StyledHeader = styled.section<StyledHeaderProps>`
   display: grid;
-  grid-gap: 10vh;
+  grid-gap: 2vh;
   @media screen and (max-width: 767px) {
     height: 100vh;
     background-image: linear-gradient(
