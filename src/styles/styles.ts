@@ -75,7 +75,7 @@ export const StyledPrimaryBtn = styled.button`
 export const StyledCard = styled.div`
   @media screen and (max-width: 767px) {
     display: grid;
-    grid-gap: 3vh;
+    /* grid-gap: 1vh; */
     padding: 0% 3%;
   }
   // Tablet
