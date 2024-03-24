@@ -233,6 +233,12 @@ export const StyledContainerIcon = styled.div`
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
 `;
+export const StyledContainerIconMobile = styled.div`
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+`;
 // Styled Icon
 export const StyledLogo = styled.div`
   @media screen and (max-width: 767px) {
@@ -321,3 +327,8 @@ export const StyledPrimaryImg = styled.img``;
 export const WhiteWord = styled.span`
   color: #ffff;
 `;
+
+export const StyledIconAppleMobile = styled.div``;
+export const StyledIconGoogleMobile = styled.div``;
+export const StyledIconPocketMobile = styled.div``;
+export const StyledIconSpotifyMobile = styled.div``;
