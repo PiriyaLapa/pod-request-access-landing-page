@@ -56,7 +56,7 @@ export const StyledPrimaryBtn = styled.button`
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     position:absolute;
     top:340px; 
-    right:17vw;
+    right:20vw;
   }
   
 
@@ -232,8 +232,7 @@ export const StyledInput = styled.input`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* background-color:#BDCDD6; */
-    /* padding: 3% 5%; */
+    
   }
 
   // Labtop
