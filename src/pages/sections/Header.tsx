@@ -20,6 +20,9 @@ export default class Header extends React.Component<HeaderProps> {
         <Card />
         <Card />
         <Card />
+        <Card />
+        <Card />
+        <Card />
         <BgPatternDots />
       </StyledHeader>
     );

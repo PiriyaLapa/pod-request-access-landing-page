@@ -14,7 +14,6 @@ const GlobalStyles = createGlobalStyle<{}>`
         background-color:#121725;
         color:#ffff;
         min-height:100vh;
-        /* overflow:hidden; */
         @media screen and (max-width:767px){
              /* background-color:#EEE9DA; */
         }
