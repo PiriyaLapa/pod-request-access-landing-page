@@ -17,6 +17,9 @@ export default class Header extends React.Component<HeaderProps> {
         <Logo />
         <PrimaryImg urlImg={tabletImg} />
         <Card />
+        <Card />
+        <Card />
+        <Card />
         <BgPatternDots />
       </StyledHeader>
     );
