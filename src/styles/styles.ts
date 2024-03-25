@@ -270,11 +270,13 @@ export const StyledContainerIconMobile = styled.div`
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
     /* background-color:#93BFCF; */
+    display:none;
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
     /* background-color:#6096B4; */
+    display:none;
   }
   @media screen and (min-width: 1920px) {
     display:none;
