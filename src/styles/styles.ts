@@ -333,10 +333,10 @@ export const StyledIconSpotify = styled.div`
 `;
 // Styled seaction
 export const StyledHeader = styled.section<StyledHeaderProps>`
+  @media screen and (max-width: 767px) {
   display: grid;
   min-height:100vh;
   grid-gap: 2vh;
-  @media screen and (max-width: 767px) {
     height: 100vh;
     background-image: linear-gradient(
         rgba(18, 23, 37, 0.85),
@@ -349,8 +349,6 @@ export const StyledHeader = styled.section<StyledHeaderProps>`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    display:flex;
-    flex-direction:column;
   }
 
   // Labtop
@@ -365,6 +363,7 @@ export const StyledHeader = styled.section<StyledHeaderProps>`
     /* background-color:#CADEFC; */
   }
 `;
+
 export const StyledBgPatternDots = styled.div`
   @media screen and (max-width: 767px) {
     display:none;
