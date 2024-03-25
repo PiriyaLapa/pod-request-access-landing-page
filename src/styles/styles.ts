@@ -75,18 +75,20 @@ export const StyledPrimaryBtn = styled.button`
 export const StyledCard = styled.div`
   @media screen and (max-width: 767px) {
     display: grid;
-    /* grid-gap: 1vh; */
     padding: 0% 3%;
   }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* background-color:#BDCDD6; */
-    /* padding: 3% 5%; */
+    width: 635px;
+    height: 509px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 5%;
   }
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    /* background-color:#93BFCF; */
   }
 
   // Desktop
@@ -113,8 +115,11 @@ export const StyledTitleCard = styled.span`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* background-color:#BDCDD6; */
-    /* padding: 3% 5%; */
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
   }
 
   // Labtop
@@ -146,8 +151,11 @@ export const StyledContentCard = styled.span`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* background-color:#BDCDD6; */
-    /* padding: 3% 5%; */
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   // Labtop
@@ -270,16 +278,16 @@ export const StyledContainerIconMobile = styled.div`
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
     /* background-color:#93BFCF; */
-    display:none;
+    display: none;
   }
 
   // Desktop
   @media screen and (min-width: 1440px) {
     /* background-color:#6096B4; */
-    display:none;
+    display: none;
   }
   @media screen and (min-width: 1920px) {
-    display:none;
+    display: none;
   }
 `;
 // Styled Icon
@@ -292,7 +300,6 @@ export const StyledLogo = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    
   }
 
   // Labtop
@@ -335,9 +342,9 @@ export const StyledIconSpotify = styled.div`
 export const StyledHeader = styled.section<StyledHeaderProps>`
   /* overflow:hidden; */
   @media screen and (max-width: 767px) {
-  display: grid;
-  height:auto;
-  grid-gap: 2vh;
+    display: grid;
+    height: auto;
+    grid-gap: 2vh;
     height: 100vh;
     background-image: linear-gradient(
         rgba(18, 23, 37, 0.85),
@@ -367,13 +374,13 @@ export const StyledHeader = styled.section<StyledHeaderProps>`
 
 export const StyledBgPatternDots = styled.div`
   @media screen and (max-width: 767px) {
-    display:none;
+    display: none;
   }
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
   }
 
   // Labtop
@@ -387,15 +394,13 @@ export const StyledBgPatternDots = styled.div`
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
   }
-
 `;
 export const StyledPrimaryImg = styled.img`
   @media screen and (max-width: 767px) {
-      display:none
+    display: none;
   }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-  
   }
 
   // Labtop
@@ -410,7 +415,6 @@ export const StyledPrimaryImg = styled.img`
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
   }
-  
 `;
 
 export const WhiteWord = styled.span`

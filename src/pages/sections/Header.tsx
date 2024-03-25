@@ -17,7 +17,6 @@ export default class Header extends React.Component<HeaderProps> {
         <Logo />
         <PrimaryImg urlImg={tabletImg} />
         <Card />
-        <h1>Hello sor </h1>
         <BgPatternDots />
       </StyledHeader>
     );
