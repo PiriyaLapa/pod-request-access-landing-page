@@ -61,7 +61,8 @@ export const StyledPrimaryBtn = styled.button`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    /* background-color:#93BFCF; */
+    position:relative;
+    left:-20%;
   }
 
   // Desktop
@@ -103,17 +104,17 @@ export const StyledCard = styled.div`
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
     max-width: 723px;
     max-height: 509px;
-    width: 78vw;
-    height: 100vh;
+    width: 65vw;
+    height: 80vh;
     position: relative;
-    top:-290px;
-    left:100px;
+    top:-320px;
+    left:90px;
     z-index: 200;
     background-color: #121725;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 5%;
 
     &::after {
@@ -419,6 +420,10 @@ export const StyledBgPatternDots = styled.div`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    position:absolute;
+    z-index:300;
+    top:550px;
+    right:10px;
   }
 
   // Desktop
@@ -447,7 +452,7 @@ export const StyledPrimaryImg = styled.img`
     z-index: 1;
     max-width: 888px;
     max-height: 640px;
-    width: 60vw;
+    width: 65vw;
     float: right;
   }
 
