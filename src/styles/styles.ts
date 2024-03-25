@@ -365,13 +365,37 @@ export const StyledHeader = styled.section<StyledHeaderProps>`
     /* background-color:#CADEFC; */
   }
 `;
-export const StyledBgPatternDots = styled.div``;
+export const StyledBgPatternDots = styled.div`
+  @media screen and (max-width: 767px) {
+    display:none;
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    display:flex;
+    flex-direction:column;
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
+
+`;
 export const StyledPrimaryImg = styled.img`
   @media screen and (max-width: 767px) {
       display:none
   }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+  
   }
 
   // Labtop
