@@ -9,16 +9,17 @@ import {
   // StyledContainerIcon,
   WhiteWord,
   StyledContainerIconMobile,
+  StyledContainerIcon,
 } from "../../styles/styles";
 import PrimaryBtn from "../buttons/PrimaryBtn";
-// import IconApple from "../Icons/IconApple";
-// import IconGoogle from "../Icons/IconGoogle";
-// import IconPocket from "../Icons/IconPocket";
-// import IconSpotify from "../Icons/IconSpotify";
 import IconSpotifyMobile from "../Icons/IconSpotifyMobile";
 import IconAppleMobile from "../Icons/IconAppleMobile";
 import IconGoogleMobile from "../Icons/IconGoogleMobile";
 import IconPocketMobile from "../Icons/IconPocketMobile";
+import IconSpotify from "../Icons/IconSpotify";
+import IconApple from "../Icons/IconApple";
+import IconGoogle from "../Icons/IconGoogle";
+import IconPocket from "../Icons/IconPocket";
 // import BgPatternDots from "../vectors/BgPatternDots";
 
 export default class Card extends Component {
@@ -46,6 +47,12 @@ export default class Card extends Component {
           <StyledInput type="text" placeholder={textFieldContent} />
           <PrimaryBtn btnMessage={btnContent} />
         </StyledForm>
+      <StyledContainerIcon>
+            <IconSpotify />
+            <IconApple />
+            <IconGoogle />
+            <IconPocket />
+      </StyledContainerIcon>
       </StyledCard>
     );
   }
