@@ -238,7 +238,7 @@ export const StyledContainerIcon = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    text-align:center;
+    text-align: center;
   }
 
   // Labtop
@@ -277,7 +277,7 @@ export const StyledContainerIconMobile = styled.div`
     /* background-color:#6096B4; */
   }
   @media screen and (min-width: 1920px) {
-    /* background-color:#CADEFC; */
+    display:none;
   }
 `;
 // Styled Icon
