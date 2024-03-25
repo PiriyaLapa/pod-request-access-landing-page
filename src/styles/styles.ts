@@ -333,9 +333,10 @@ export const StyledIconSpotify = styled.div`
 `;
 // Styled seaction
 export const StyledHeader = styled.section<StyledHeaderProps>`
+  overflow:hidden;
   @media screen and (max-width: 767px) {
   display: grid;
-  min-height:100vh;
+  height:auto;
   grid-gap: 2vh;
     height: 100vh;
     background-image: linear-gradient(
