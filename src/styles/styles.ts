@@ -334,6 +334,7 @@ export const StyledIconSpotify = styled.div`
 // Styled seaction
 export const StyledHeader = styled.section<StyledHeaderProps>`
   display: grid;
+  min-height:100vh;
   grid-gap: 2vh;
   @media screen and (max-width: 767px) {
     height: 100vh;

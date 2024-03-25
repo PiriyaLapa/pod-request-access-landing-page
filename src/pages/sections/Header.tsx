@@ -4,6 +4,7 @@ import Logo from "../../components/Icons/Logo";
 import Card from "../../components/cards/Card";
 import PrimaryImg from "../../components/images/PrimaryImg";
 import tabletImg from "../../assets/tablet/image-host.jpg";
+import BgPatternDots from "../../components/vectors/BgPatternDots";
 
 interface HeaderProps {
   bgImg: string;
@@ -16,6 +17,7 @@ export default class Header extends React.Component<HeaderProps> {
         <Logo />
         <PrimaryImg urlImg={tabletImg} />
         <Card />
+        <BgPatternDots />
       </StyledHeader>
     );
   }
