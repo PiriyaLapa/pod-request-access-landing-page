@@ -32,7 +32,7 @@ export default class LandingPage extends React.Component {
 
   public render(): React.ReactNode {
     const { windowWidth} = this.state;
-    const isDesktop = windowWidth >= 1440;
+    const isDesktop = windowWidth >= 1024;
     // const labelScreenNow = new ScreenSizeDetect(windowWidth);
     return (
       <StyledLandingPage>

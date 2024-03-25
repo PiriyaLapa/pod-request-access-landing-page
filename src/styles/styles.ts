@@ -54,11 +54,10 @@ export const StyledPrimaryBtn = styled.button`
   }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    position:absolute;
-    top:340px; 
-    right:20vw;
+    position: absolute;
+    top: 340px;
+    right: 20vw;
   }
-  
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -83,15 +82,15 @@ export const StyledCard = styled.div`
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     max-width: 635px;
     max-height: 509px;
-    width:75%;
-    height:100vh;
+    width: 75%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #121725;
     position: relative;
     top: 200px;
-    left:38px;
+    left: 38px;
     z-index: 200;
 
     padding: 4% 23px;
@@ -102,6 +101,26 @@ export const StyledCard = styled.div`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    max-width: 723px;
+    max-height: 509px;
+    width: 78vw;
+    height: 100vh;
+    position: relative;
+    top:-290px;
+    left:100px;
+    z-index: 200;
+    background-color: #121725;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5%;
+
+    &::after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
   }
 
   // Desktop
@@ -113,13 +132,13 @@ export const StyledCard = styled.div`
   }
 `;
 export const StyledTitleCard = styled.span`
+  font-family: "chivo";
+  font-style: normal;
   color: #54e6af;
   display: block;
   text-transform: uppercase;
 
   @media screen and (max-width: 767px) {
-    font-family: "chivo";
-    font-style: normal;
     font-weight: 300;
     font-size: 26px;
     line-height: 38px;
@@ -128,8 +147,6 @@ export const StyledTitleCard = styled.span`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    font-family: "Chivo";
-    font-style: normal;
     font-weight: 400;
     font-size: 42px;
     line-height: 56px;
@@ -137,7 +154,9 @@ export const StyledTitleCard = styled.span`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    /* background-color:#93BFCF; */
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
   }
 
   // Desktop
@@ -164,9 +183,7 @@ export const StyledContentCard = styled.span`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    width:60vw;
-    font-family: "Chivo";
-    font-style:normal;
+    width: 60vw;
     font-weight: 300;
     font-size: 18px;
     line-height: 28px;
@@ -174,7 +191,9 @@ export const StyledContentCard = styled.span`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    /* background-color:#93BFCF; */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
   }
 
   // Desktop
@@ -196,7 +215,7 @@ export const StyledForm = styled.form`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-   // 
+    //
   }
 
   // Labtop
@@ -232,7 +251,6 @@ export const StyledInput = styled.input`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    
   }
 
   // Labtop
@@ -312,9 +330,9 @@ export const StyledLogo = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    position:relative;
-    top:50px;
-    left:55px;
+    position: relative;
+    top: 50px;
+    left: 55px;
   }
 
   // Labtop
@@ -394,9 +412,9 @@ export const StyledBgPatternDots = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    position:relative;
-    top:300px;
-    left:30px;
+    position: relative;
+    top: 300px;
+    left: 30px;
   }
 
   // Labtop
@@ -425,7 +443,12 @@ export const StyledPrimaryImg = styled.img`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    /* background-color:#93BFCF; */
+    position: relative;
+    z-index: 1;
+    max-width: 888px;
+    max-height: 640px;
+    width: 60vw;
+    float: right;
   }
 
   // Desktop
