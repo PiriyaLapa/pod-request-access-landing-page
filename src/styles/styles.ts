@@ -85,6 +85,14 @@ export const StyledCard = styled.div`
     flex-direction: column;
     justify-content: space-around;
     padding-top: 5%;
+    background-color:#121725;
+    position:absolute;
+    top:200px;
+    z-index:200;
+    padding:30px;
+    
+    /* position:absolute;
+    top:300px; */
   }
 
   // Labtop
@@ -401,6 +409,10 @@ export const StyledPrimaryImg = styled.img`
   }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+    position: absolute;
+    top:0px;
+    left:200px;
+    z-index:1;
   }
 
   // Labtop
