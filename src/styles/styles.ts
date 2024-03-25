@@ -54,9 +54,11 @@ export const StyledPrimaryBtn = styled.button`
   }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* background-color:#BDCDD6; */
-    /* padding: 3% 5%; */
+    position:absolute;
+    top:340px; 
+    right:17vw;
   }
+  
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -79,18 +81,21 @@ export const StyledCard = styled.div`
   }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    width: 635px;
-    height: 509px;
+    max-width: 635px;
+    max-height: 509px;
+    width:75%;
+    height:100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-top: 5%;
-    background-color:#121725;
-    position:absolute;
-    top:200px;
-    z-index:200;
-    padding:30px;
-    
+    justify-content: space-between;
+    background-color: #121725;
+    position: relative;
+    top: 200px;
+    left:38px;
+    z-index: 200;
+
+    padding: 4% 23px;
+
     /* position:absolute;
     top:300px; */
   }
@@ -126,7 +131,7 @@ export const StyledTitleCard = styled.span`
     font-family: "Chivo";
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 56px;
   }
 
@@ -159,8 +164,9 @@ export const StyledContentCard = styled.span`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+    width:60vw;
     font-family: "Chivo";
-    font-style: normal;
+    font-style:normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 28px;
@@ -190,8 +196,7 @@ export const StyledForm = styled.form`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* background-color:#BDCDD6; */
-    /* padding: 3% 5%; */
+   // 
   }
 
   // Labtop
@@ -254,7 +259,7 @@ export const StyledContainerIcon = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    text-align: center;
+    text-align: start;
   }
 
   // Labtop
@@ -308,6 +313,9 @@ export const StyledLogo = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+    position:relative;
+    top:50px;
+    left:55px;
   }
 
   // Labtop
@@ -387,8 +395,9 @@ export const StyledBgPatternDots = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    display: flex;
-    flex-direction: column;
+    position:relative;
+    top:300px;
+    left:30px;
   }
 
   // Labtop
@@ -410,9 +419,9 @@ export const StyledPrimaryImg = styled.img`
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     position: absolute;
-    top:0px;
-    left:200px;
-    z-index:1;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
   }
 
   // Labtop
