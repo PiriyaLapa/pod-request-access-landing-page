@@ -292,8 +292,7 @@ export const StyledLogo = styled.div`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* background-color:#BDCDD6; */
-    /* padding: 3% 5%; */
+    
   }
 
   // Labtop
@@ -349,6 +348,8 @@ export const StyledHeader = styled.section<StyledHeaderProps>`
 
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+    display:flex;
+    flex-direction:column;
   }
 
   // Labtop
@@ -364,7 +365,28 @@ export const StyledHeader = styled.section<StyledHeaderProps>`
   }
 `;
 export const StyledBgPatternDots = styled.div``;
-export const StyledPrimaryImg = styled.img``;
+export const StyledPrimaryImg = styled.img`
+  @media screen and (max-width: 767px) {
+      display:none
+  }
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  // Labtop
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* background-color:#93BFCF; */
+  }
+
+  // Desktop
+  @media screen and (min-width: 1440px) {
+    /* background-color:#6096B4; */
+  }
+  @media screen and (min-width: 1920px) {
+    /* background-color:#CADEFC; */
+  }
+  
+`;
 
 export const WhiteWord = styled.span`
   color: #ffff;
