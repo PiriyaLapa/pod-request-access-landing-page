@@ -27,3 +27,9 @@ export interface PrimaryImgProps {
 export interface StyledHeaderProps {
   $bgImg: string;
 }
+
+export interface EmailInputState{
+  email:string;
+  error:string|null;
+  submitted:boolean;
+}

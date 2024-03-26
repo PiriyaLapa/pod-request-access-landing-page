@@ -6,7 +6,7 @@ export default class PrimaryBtn extends Component<PrimaryBtnProps>{
     render():ReactNode{
         const {btnMessage} = this.props;
         return (
-            <StyledPrimaryBtn>{btnMessage}</StyledPrimaryBtn>
+            <StyledPrimaryBtn type="submit">{btnMessage}</StyledPrimaryBtn>
         )
     }
 }

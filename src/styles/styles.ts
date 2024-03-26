@@ -137,9 +137,9 @@ export const StyledCard = styled.div`
     justify-content: space-between;
     padding-top: 2vh;
 
-    position:absolute;
-    top:300px;
-    left:200px;
+    position: absolute;
+    top: 300px;
+    left: 200px;
   }
 
   @media screen and (min-width: 1920px) {
@@ -457,10 +457,9 @@ export const StyledBgPatternDots = styled.div`
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    position:absolute;
-    top:700px;
-    right:0px;
-
+    position: absolute;
+    top: 700px;
+    right: 0px;
   }
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
@@ -507,3 +506,11 @@ export const StyledIconAppleMobile = styled.div`
 export const StyledIconGoogleMobile = styled.div``;
 export const StyledIconPocketMobile = styled.div``;
 export const StyledIconSpotifyMobile = styled.div``;
+export const ErrorMessage = styled.span`
+    display:inline-block;
+  font-family:'Chivo';
+  font-style:normal;
+  font-weight:400;
+  font-size:14px;
+  color: red;
+`;
