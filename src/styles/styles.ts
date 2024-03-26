@@ -42,8 +42,9 @@ export const StyledPrimaryBtn = styled.button`
   /* position: relative;
   right: 167px; */
   &:hover {
-    transition: 0.6s;
-    background-color: #b3ffe2;
+    transition: 0.3s;
+    /* background-color: #b3ffe2; */
+    background-color:yellow;
   }
 
   @media screen and (max-width: 767px) {
