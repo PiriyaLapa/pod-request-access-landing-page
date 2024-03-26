@@ -61,8 +61,8 @@ export const StyledPrimaryBtn = styled.button`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    position:relative;
-    left:-20%;
+    position: relative;
+    left: -20%;
   }
 
   // Desktop
@@ -107,8 +107,8 @@ export const StyledCard = styled.div`
     width: 65vw;
     height: 80vh;
     position: relative;
-    top:-320px;
-    left:90px;
+    top: -320px;
+    left: 90px;
     z-index: 200;
     background-color: #121725;
     /* border: 1px solid red; */
@@ -126,8 +126,22 @@ export const StyledCard = styled.div`
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    /* background-color:#6096B4; */
+    max-width: 723px;
+    max-height: 509px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #121725;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2vh;
+
+    position:absolute;
+    top:300px;
+    left:200px;
   }
+
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
   }
@@ -162,7 +176,12 @@ export const StyledTitleCard = styled.span`
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    /* background-color:#6096B4; */
+    font-family: "Chivo";
+    font-style: normal;
+    font-style: 400;
+    font-size: 52px;
+    line-height: 62px;
+    text-transform: uppercase;
   }
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
@@ -192,6 +211,7 @@ export const StyledContentCard = styled.span`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    width: 60vw;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
@@ -199,7 +219,14 @@ export const StyledContentCard = styled.span`
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    /* background-color:#6096B4; */
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125em; // 18px
+    line-height: 1.75em; // 28px;
+    letter-spacing: initial;
+    text-transform: none;
+    width: 70%;
   }
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
@@ -338,7 +365,9 @@ export const StyledLogo = styled.div`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    /* background-color:#93BFCF; */
+    position: relative;
+    top: 50px;
+    left: 140px;
   }
 
   // Desktop
@@ -420,10 +449,10 @@ export const StyledBgPatternDots = styled.div`
 
   // Labtop
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    position:absolute;
-    z-index:300;
-    top:550px;
-    right:10px;
+    position: absolute;
+    z-index: 300;
+    top: 550px;
+    right: 10px;
   }
 
   // Desktop
@@ -458,7 +487,7 @@ export const StyledPrimaryImg = styled.img`
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    /* background-color:#6096B4; */
+    float: right;
   }
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
@@ -469,7 +498,9 @@ export const WhiteWord = styled.span`
   color: #ffff;
 `;
 
-export const StyledIconAppleMobile = styled.div``;
+export const StyledIconAppleMobile = styled.div`
+  display: inline-block;
+`;
 export const StyledIconGoogleMobile = styled.div``;
 export const StyledIconPocketMobile = styled.div``;
 export const StyledIconSpotifyMobile = styled.div``;
