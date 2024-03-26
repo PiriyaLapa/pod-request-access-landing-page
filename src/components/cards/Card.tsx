@@ -11,6 +11,7 @@ import {
   StyledContainerIconMobile,
   StyledContainerIcon,
   ErrorMessage,
+  SuccessMessage,
 } from "../../styles/styles";
 import PrimaryBtn from "../buttons/PrimaryBtn";
 import IconSpotifyMobile from "../Icons/IconSpotifyMobile";
@@ -31,6 +32,7 @@ export default class Card extends Component<{}, EmailInputState> {
       email: "",
       error: null,
       submitted: false,
+      success: null,
     };
   }
 
@@ -38,6 +40,7 @@ export default class Card extends Component<{}, EmailInputState> {
     this.setState({
       email: event.target.value,
       error: null,
+      success: null,
     });
   };
 
@@ -49,7 +52,11 @@ export default class Card extends Component<{}, EmailInputState> {
       this.setState({ error: "Oops! Please check you email", submitted: true });
     } else {
       console.log("Email submitted", email);
-      this.setState({ submitted: true });
+      this.setState({
+        submitted: true,
+        success: "Sucessfully !!!",
+        error: null,
+      });
     }
   };
 
@@ -61,7 +68,7 @@ export default class Card extends Component<{}, EmailInputState> {
   render(): ReactNode {
     const { title, content, textFieldContent, btnContent } = dataCard;
     const parts = title.split("everywhere.");
-    const {email, error, submitted} = this.state;
+    const { email, error, submitted,success } = this.state;
     return (
       <StyledCard>
         <StyledTitleCard>
@@ -80,9 +87,15 @@ export default class Card extends Component<{}, EmailInputState> {
           <IconPocketMobile />
         </StyledContainerIconMobile>
         <StyledForm onSubmit={this.handleSubmit}>
-          <StyledInput type="text" placeholder={textFieldContent} value={email} onChange={this.handleChange}/>
+          <StyledInput
+            type="text"
+            placeholder={textFieldContent}
+            value={email}
+            onChange={this.handleChange}
+          />
           {submitted && error && <ErrorMessage>{error}</ErrorMessage>}
-          <PrimaryBtn  btnMessage={btnContent}/>
+          {submitted && success && <SuccessMessage>{success}</SuccessMessage>}
+          <PrimaryBtn btnMessage={btnContent} />
         </StyledForm>
         <StyledContainerIcon>
           <IconSpotify />
