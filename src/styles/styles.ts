@@ -508,13 +508,13 @@ export const StyledIconGoogleMobile = styled.div``;
 export const StyledIconPocketMobile = styled.div``;
 export const StyledIconSpotifyMobile = styled.div``;
 export const ErrorMessage = styled.span`
-    display:block;
-  font-family:'Chivo';
-  font-style:normal;
-  font-weight:400;
-  font-size:14px;
+  display: block;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   color: red;
 `;
 export const SuccessMessage = styled(ErrorMessage)`
-  color:#54E6AF;
-`
+  color: #54e6af;
+`;
