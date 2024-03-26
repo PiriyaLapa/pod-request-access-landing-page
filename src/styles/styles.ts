@@ -457,7 +457,10 @@ export const StyledBgPatternDots = styled.div`
 
   // Desktop
   @media screen and (min-width: 1440px) {
-    /* background-color:#6096B4; */
+    position:absolute;
+    top:700px;
+    right:0px;
+
   }
   @media screen and (min-width: 1920px) {
     /* background-color:#CADEFC; */
